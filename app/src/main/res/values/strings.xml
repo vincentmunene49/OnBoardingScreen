@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">OnBoaring Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_description">support team image</string>
+    <string name="header">Learn how to create onBoarding Screens</string>
+    <string name="content">OnBoarding screens are loaded first time when the user Downloads your app with basic instructions on how your application works. Though not crucial they can make your app stand out. The sliding to left and rightis made possible using a view_pager view</string>
+    <string name="header_fragment2">It\'s Really Easy Continue Reading</string>
+    <string name="description"> First start by creating the fragments you want to display in the onBoarding. The main activity fragment should contain a view_pager view. Create an adapter that we will use to loead the screens</string>
+    <string name="final_header">Finally</string>
+    <string name="final_description">Using your adapter, connect your screens (fragments) to your main activity and customize it however you want, you can even add sliders :)</string>
 </resources>
