@@ -18,15 +18,7 @@ class third_screen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val viewPager: ViewPager2 = requireActivity().findViewById(R.id.viewPager2)
-       val next: Button = requireActivity().findViewById(R.id.buttonNext)
-        val back: Button = requireActivity().findViewById(R.id.buttonBack)
 
-
-        back.setOnClickListener {
-            viewPager.currentItem=1
-            next.visibility = View.VISIBLE
-        }
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_third_screen, container, false)
     }

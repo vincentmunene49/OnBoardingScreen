@@ -1,11 +1,13 @@
 package com.example.onboaringscreen
 
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.onboaringscreen.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,8 +29,11 @@ class MainActivity : AppCompatActivity() {
             lifecycle
         )
 
-        binding.viewPager2.adapter = viewPagerAdapter
 
+        binding.viewPager2.adapter = viewPagerAdapter
+        TabLayoutMediator(binding.tabLayout,binding.viewPager2){tab,position->
+
+        }.attach()
 
 
 

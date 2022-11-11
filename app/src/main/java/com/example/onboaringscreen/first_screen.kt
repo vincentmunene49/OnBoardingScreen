@@ -17,17 +17,6 @@ class first_screen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val viewPager:ViewPager2 = requireActivity().findViewById(R.id.viewPager2)
-        val next:Button = requireActivity().findViewById(R.id.buttonNext)
-        val back:Button = requireActivity().findViewById(R.id.buttonBack)
-        back.visibility = View.GONE
-
-
-        next.setOnClickListener {
-            viewPager.currentItem=1
-            back.visibility = View.VISIBLE
-
-        }
 
 
 
